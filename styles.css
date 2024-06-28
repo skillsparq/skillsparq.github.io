@@ -1,0 +1,319 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling for the entire page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #333;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Navigation Bar styles */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nav-links li {
+    margin-right: 20px;
+}
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+.nav-links li a:hover {
+    color: #f0f0f0;
+}
+
+/* Logo styles */
+.logo:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.logo:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.logo:hover {
+    color: whitesmoke;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.logo:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+/* Hero Section styles */
+.hero {
+    background-color: linear-gradient(to right,#6a11cb,blue);
+    color: #fff;
+    text-align: center;
+    padding: 100px ;
+}
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+.btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+.btn:hover {
+    background-color: #f0f0f0;
+    color: #007bff;
+}
+
+/* Features Section styles */
+.features {
+    background-color: #fff;
+    padding: 80px ;
+    text-align: center;
+}
+.features h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+.feature-item {
+    margin-bottom: 40px;
+}
+.feature-item i {
+    font-size: 3em;
+    margin-bottom: 100px;
+    color: #007bff;
+}
+/* Testimonials Section */
+.testimonials {
+    padding: 60px ;
+    margin-bottom:20px;
+    background: #fff;
+    text-align: center;
+}
+
+.testimonials .container {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.testimonial {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.testimonial.active {
+    opacity: 1;
+}
+
+.testimonial p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.testimonial h4 {
+    font-size: 18px;
+    color: #020000;
+}
+
+
+/* Footer styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.footer p {
+    font-size: 0.9em;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar .container {
+        flex-direction: column;
+    }
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+}
+/* Main Content */
+.main-content {
+    padding: 40px 0;
+}
+
+.main-content .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.main-content .intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-content .intro h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.main-content .intro p {
+    font-size: 18px;
+    color: #666;
+}
+
+.auth-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.auth-form {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    flex: 1 1 45%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.auth-form h3 {
+    margin-bottom: 20px;
+}
+
+.auth-form label {
+    display: block;
+    margin-bottom: 8px;
+    text-align: left;
+}
+
+.auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.auth-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.auth-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+.footer .container p {
+    margin: 0;
+}
+.role-button {
+    padding: 15px 30px;
+    text-decoration: none;
+    color: #fff;
+    background: #333;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.role-button:hover {
+    background: #555;
+}
+
+.role-button.employer {
+    background: #ff6b6b;
+}
+
+.role-button.employer:hover {
+    background: #ff8b8b;
+}
+
+.role-button.freelancer {
+    background: #1dd1a1;
+}
+
+.role-button.freelancer:hover {
+    background: #48d9b3;
+}
+.container1{
+    background-color: #f0f0f0;
+    text-align: center;
+    margin: 100px;
+    padding: 100px;
+}
+.footer1{
+    position: absolute; /* Positions the div relative to its first positioned ancestor */
+    bottom:0;/* Positions the div at the top of the container */
+    width:100%;
+    height: 110px;
+    background-color:#333; /* Optional: Set a background color */
+    color: #f0f0f0;
+    text-align: center;
+}
+.intro{
+    background-color: #f0f0f0;
+    border-radius: 20px;
+}
